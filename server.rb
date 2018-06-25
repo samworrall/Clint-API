@@ -6,5 +6,9 @@ class EventManager < Sinatra::Base
     'Welcome to the Clint API'
   end
 
+  get '/events' do
+    Event.all
+  end
+
   run! if app_file ==$0
 end
