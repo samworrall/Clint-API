@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'mongoid'
 gem 'rubocop'
 gem 'rspec'
 gem 'sinatra'
