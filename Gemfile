@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'pg', '~> 1.0.0'
 gem 'rubocop'
 gem 'rspec'
 gem 'sinatra'
