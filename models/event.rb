@@ -1,10 +1,3 @@
-require 'sinatra'
-require 'mongoid'
-
-# require './models/event.rb'
-
-Mongoid.load! "mongoid.config"
-
 class Event
   include Mongoid::Document
 
@@ -20,8 +13,4 @@ class Event
 
   index({ title: 'text' })
   index({ isbn:1 }, { unique: true, name: "isbn_index" })
-end
-
-get '/' do
-  'Welcome to Clint!'
 end
