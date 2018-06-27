@@ -26,5 +26,11 @@ RSpec.describe Event, type: :model do
         expect(Event.search(search_hash)).to eq([@event3])
       end
     end
+
+    context 'When no date is given' do
+      it 'All events' do
+        expect(Event.search()).to eq([@event1, @event2, @event3])
+      end
+    end
   end
 end
