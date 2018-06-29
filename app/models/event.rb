@@ -7,7 +7,9 @@ class Event < ApplicationRecord
 
   def self.sort(params)
     @sorted_by_date = Event.sort_by_date(params)
-    @sorted_by_date.select { |event| (event.location == params[:location] && event.price_range == params[:price_range]) }
+    @sorted_by_date.select { |event|
+     (event.location == params[:location] && event.price_range == params[:price_range].to_i)
+     }
   end
 
   def self.sort_by_date(params)
