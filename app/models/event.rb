@@ -7,7 +7,7 @@ class Event < ApplicationRecord
 
   def self.sort(params)
     @sorted_by_date = Event.sort_by_date(params)
-    @sorted_by_date.select { |event| event.location == params[:location] }
+    @sorted_by_date.select { |event| (event.location == params[:location] && event.price_range == params[:price_range]) }
   end
 
   def self.sort_by_date(params)
@@ -19,6 +19,6 @@ class Event < ApplicationRecord
   end
 
   def self.params_present(params)
-    params[:date].present? || params[:location].present?
+    params[:date].present? || params[:location].present? || params[:price_range].present?
   end
 end

@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/environment.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/application.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/application.rb": [
         1,
         null,
         1,
@@ -30,13 +30,13 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/boot.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/environments/test.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/environments/test.rb": [
         1,
         null,
         null,
@@ -84,30 +84,30 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/application_controller_renderer.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/application_controller_renderer.rb": [
 
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/backtrace_silencers.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/backtrace_silencers.rb": [
 
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/cors.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/cors.rb": [
 
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/filter_parameter_logging.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/filter_parameter_logging.rb": [
         1
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/inflections.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/inflections.rb": [
 
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/mime_types.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/mime_types.rb": [
 
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/initializers/wrap_parameters.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/initializers/wrap_parameters.rb": [
         1,
         2,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/factories.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/factories.rb": [
         1,
         1,
         1,
@@ -126,12 +126,12 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/config/routes.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/config/routes.rb": [
         1,
         1,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/controllers/events_controller.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/controllers/events_controller.rb": [
         1,
         1,
         null,
@@ -184,79 +184,56 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/controllers/application_controller.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/models/availabilities_event_spec.rb": [
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/models/availabilities_event.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/models/availability_spec.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/models/availabilities_event_spec.rb": [
         1,
         null,
         1,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/models/availability.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/models/availabilities_event.rb": [
+        1,
         1,
         1,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/models/event_spec.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/models/availability_spec.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/models/availability.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/models/event_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        7,
-        7,
-        7,
-        7,
-        7,
-        7,
-        7,
-        7,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
         null,
         null,
         1,
@@ -265,7 +242,50 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
         1,
         1,
         1,
@@ -284,33 +304,33 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/app/models/event.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/app/models/event.rb": [
         1,
         1,
         null,
         1,
+        8,
+        null,
+        null,
+        1,
+        5,
+        14,
+        null,
+        null,
+        1,
+        6,
+        6,
+        6,
+        16,
         6,
         null,
         null,
         1,
-        3,
-        8,
-        null,
-        null,
-        1,
-        4,
-        4,
-        4,
         10,
-        4,
-        null,
-        null,
-        1,
-        8,
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/requests/events_spec.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/requests/events_spec.rb": [
         1,
         null,
         1,
@@ -322,7 +342,7 @@
         null,
         null
       ],
-      "/Users/samworrall/Desktop/Projects/final_project/clint_api/spec/routing/events_routing_spec.rb": [
+      "/Users/afishcalledrob/Documents/Makers/clint_api/spec/routing/events_routing_spec.rb": [
         1,
         null,
         1,
@@ -358,6 +378,6 @@
         null
       ]
     },
-    "timestamp": 1530270052
+    "timestamp": 1530271850
   }
 }
