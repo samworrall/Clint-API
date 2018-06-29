@@ -6,15 +6,15 @@ RSpec.describe EventsController, type: :controller do
     @availability1 = FactoryBot.create(:availability, id: 1)
     @availability2 = FactoryBot.create(:availability, id: 2, date: '2018-06-02')
     @event1 = FactoryBot.create(:event, id: 1)
-    @event2 = FactoryBot.create(:event, id: 2)
-    @event3 = FactoryBot.create(:event, id: 3)
+    @event2 = FactoryBot.create(:event, id: 2, location: 'Edinburgh', price_range: 2)
+    @event3 = FactoryBot.create(:event, id: 3, price_range: 3, category: 'group fun')
     @AE1 = FactoryBot.create(:availabilities_event, id: 1)
     @AE2 = FactoryBot.create(:availabilities_event, id: 2, event_id: 2)
     @AE3 = FactoryBot.create(:availabilities_event, id: 3, event_id: 3, availability_id: 2)
   end
 
   let(:valid_attributes) {
-    {title: 'event', description: 'description', price: 10}
+    {title: 'event', description: 'description', url: 'http://example.com', location: 'London', price_range: 1, category: 'group fun'}
   }
 
   let(:invalid_attributes) {
@@ -49,7 +49,7 @@ RSpec.describe EventsController, type: :controller do
 
       it "renders a JSON response with the new event" do
 
-        post :create, params: {event: {title: 'event', description: 'description', price: 10} }, session: valid_session
+        post :create, params: {event: valid_attributes }, session: valid_session
         expect(response).to have_http_status(:created)
         expect(response.content_type).to eq('application/json')
         expect(response.location).to eq(event_url(Event.last))
@@ -60,14 +60,14 @@ RSpec.describe EventsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        {title: 'new event', description: 'new description', price: 20}
+        {title: 'new event', description: 'new description', price_range: 5}
       }
 
       it "updates the requested event" do
         event = Event.create(valid_attributes)
         expect {
           put :update, params: {id: event.to_param, event: new_attributes}, session: valid_session
-        }.to change { Event.last.price }.from(10).to(20)
+        }.to change { Event.last.price_range}.from(1).to(5)
       end
 
       it "renders a JSON response with the event" do

@@ -33,7 +33,10 @@ ActiveRecord::Schema.define(version: 2018_06_26_155832) do
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.integer "price"
+    t.string "url"
+    t.string "location"
+    t.integer "price_range"
+    t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

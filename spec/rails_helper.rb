@@ -1,6 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'simplecov'
 require 'simplecov-console'
+require 'web_helpers'
 SimpleCov.start
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
