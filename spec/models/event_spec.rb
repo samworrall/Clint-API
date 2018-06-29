@@ -15,7 +15,7 @@ RSpec.describe Event, type: :model do
 
     context '#params_present' do
       it 'Returns true' do
-        search_hash = { date: '2018-06-02' }
+        search_hash = { date: '2018-06-02', location: 'London' }
         expect(Event.params_present(search_hash)).to eq(true)
       end
 
@@ -27,29 +27,22 @@ RSpec.describe Event, type: :model do
 
     context '#sort_by_date' do
       it 'Returns event 3' do
-        search_hash = { date: '2018-06-02' }
+        search_hash = { date: '2018-06-02', location: 'London' }
         expect(Event.sort_by_date(search_hash)).to eq([@event3])
       end
     end
 
-    context '#sort_by_location' do
-      it 'Returns event 2' do
-        search_hash = { location: 'Edinburgh' }
-        expect(Event.sort_by_location(search_hash)).to eq([@event2])
-      end
-    end
-
     context 'Filtering by date' do
-      xcontext 'When given date is 2018-06-01' do
-        it 'Returns event1 and event 2' do
-          search_hash = { date: '2018-06-01' }
-          expect(Event.search(search_hash)).to eq([@event1, @event2])
+      context 'When given date is 2018-06-01' do
+        it 'Returns event1' do
+          search_hash = { date: '2018-06-01', location: 'London' }
+          expect(Event.search(search_hash)).to eq([@event1])
         end
       end
 
-      xcontext 'When given date is 2018-06-02' do
+      context 'When given date is 2018-06-02' do
         it 'Returns event3 only' do
-          search_hash = { date: '2018-06-02' }
+          search_hash = { date: '2018-06-02', location: 'London' }
           expect(Event.search(search_hash)).to eq([@event3])
         end
       end
@@ -62,10 +55,10 @@ RSpec.describe Event, type: :model do
     end
 
     context 'Filtering by location' do
-      xcontext 'When location is London' do
-        it 'Returns event1 and event 3' do
-          search_hash = { location: 'London' }
-          expect(Event.search(search_hash)).to eq([@event1, @event3])
+      context 'When location is London' do
+        it 'Returns event1' do
+          search_hash = { date: '2018-06-01', location: 'London' }
+          expect(Event.search(search_hash)).to eq([@event1])
         end
       end
     end
