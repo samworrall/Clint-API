@@ -9,6 +9,9 @@ FactoryBot.define do
   factory :event do
     title 'event1'
     description 'description1'
-    price 10
+    url 'http://example.com'
+    location 'London'
+    price_range 1
+    category 'Romantic'
   end
 end
