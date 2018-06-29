@@ -5,6 +5,7 @@ Event.create([
   {title: "Omescape (Kings Cross)",description: "Premier escape room game in London. Immersive, mind-blowing entertainment - find clues, solve puzzles and escape the room in 60 mins.",url: "https://omescapelondon.co.uk/",location: "London",price_range: 3,category: "Group Fun/Romantic"},
   {title: "Dans le Noir?",description: "Dans le Noir ? (literally : In the Dark ?) is a set of unique human and sensory experiences. It is first a restaurant chain where guests dine in complete darkness served by unexpected guides.",url: "https://www.danslenoir.com/en/welcome/",location: "London",price_range: 5,category: "Group Fun/Romantic"},
   {title: "Bounce Ping Pong",description: "Bounce is Europe's largest purpose-built Social Ping Pong Club, featuring the finest cocktails, and a critically acclaimed Italian pizza restaurant.",url: "https://www.bouncepingpong.com/",location: 'London',price_range: 2,category: 'Group Fun/Romantic'},
+  {title: "LoveBox Festival",description: "This two-day fest brings the best new bands and some veterans of alternative music to its new home at Gunnersbury Park",url: "https://www.timeout.com/london/music/lovebox-2",location: 'London',price_range: 3,category: 'Group Fun/Romantic'},
   {title: "",description: "",url: "",location: "",price_range: ,category: ""},
   {title: "",description: "",url: "",location: "",price_range: ,category: ""},
   {title: "",description: "",url: "",location: "",price_range: ,category: ""},
@@ -231,5 +232,7 @@ AvailabilitiesEvent.create([
   {event_id: 6, availability_id: 29},
   {event_id: 6, availability_id: 30},
   {event_id: 6, availability_id: 31},
+  {event_id: 7, availability_id: 13},
+  {event_id: 7, availability_id: 14},
 
 ])
